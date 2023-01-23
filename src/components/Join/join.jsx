@@ -9,6 +9,7 @@ const Join = () => {
     emailjs.sendForm('service_jzvmidn', 'template_50z7ro2', form.current, 'Z7DQCa4EOTN-AkwnG')
       .then((result) => {
           console.log(result.text);
+          alert('Send...')
       }, (error) => {
           console.log(error.text);
       });
