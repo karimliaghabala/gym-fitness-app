@@ -6,7 +6,7 @@
   --darkGrey: #464D53;
   --caloryCard: #656565;
   --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
-  --appColor:  #3c3f45;
+  --appColor: #3c3f45;
 }
 
 .App {
@@ -18,16 +18,19 @@
   gap: 6rem;
   overflow: hidden;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   display: none;
 }
-.stroke-text{
+
+.stroke-text {
   font-family: Arial, Helvetica, sans-serif;
   color: transparent;
-  -webkit-text-stroke-width: 1px; 
-  -webkit-text-stroke-color: white; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
-.btn{
+
+.btn {
   background-color: white;
   padding: 0.5rem;
   font-weight: bold;
@@ -37,6 +40,15 @@
   align-items: center;
   justify-content: center;
 }
-.btn:hover{
+
+.btn:hover {
   cursor: pointer;
+}
+
+.blur {
+  background-color: rgba(253, 120, 43, 0.89);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -9;
 }
