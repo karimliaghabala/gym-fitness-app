@@ -83,3 +83,11 @@
         transform: none;
     }
 }
+@media screen and (max-width:375px){
+    .plan{
+        flex-direction: column;
+    }
+    .plans>:nth-child(2){
+        transform: none;
+    }
+}
