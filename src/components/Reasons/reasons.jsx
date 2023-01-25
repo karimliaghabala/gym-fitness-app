@@ -22,50 +22,26 @@ const reasons = () => {
             </div>
             <div className='right-r'>
                 <span>some reasons</span>
-                <motion.div
-                            initial={{ opacity: 0, x: -100 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: 100 }}
-                            transition={transition}
-                ><span className='stroke-text'>why</span>
+                <div>
+                    <span className='stroke-text'>why</span>
                     <span> choose us?</span>
-                </motion.div>
+                </div>
                 <div className='details-r'>
                     <div>
                         <img src={tick} alt="tick" />
-                        <motion.span
-                            initial={{ opacity: 0, x: 40 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -100 }}
-                            transition={transition}
-                        >OVER 140+ EXPERT COACHS</motion.span>
+                        <span>OVER 140+ EXPERT COACHS</span>
                     </div>
                     <div>
                         <img src={tick} alt="tick" />
-                        <motion.span
-                            initial={{ opacity: 0, x: 60 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -100 }}
-                            transition={transition}
-                        >TRAIN SMARTER AND FASTER THAN BEFORE</motion.span>
+                        <span>TRAIN SMARTER AND FASTER THAN BEFORE</span>
                     </div>
                     <div>
                         <img src={tick} alt="tick" />
-                        <motion.span
-                            initial={{ opacity: 0, x: 80 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -100 }}
-                            transition={transition}
-                        > 1 FREE PROGRAM FOR NEW MEMBER</motion.span>
+                        <span> 1 FREE PROGRAM FOR NEW MEMBER</span>
                     </div>
                     <div>
                         <img src={tick} alt="tick" />
-                        <motion.span
-                            initial={{ opacity: 0, x: 100 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -100 }}
-                            transition={transition}
-                        >RELIABLE PARTNERS</motion.span>
+                        <span>RELIABLE PARTNERS</span>
                     </div>
                 </div>
                 <span
