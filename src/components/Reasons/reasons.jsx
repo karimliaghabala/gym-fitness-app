@@ -8,8 +8,10 @@ import nb from '../../assets/nb.png';
 import adidas from '../../assets/adidas.png';
 import nike from '../../assets/nike.png';
 import tick from '../../assets/tick.png';
+import { motion } from 'framer-motion';
 
 const reasons = () => {
+    const transition = { type: 'spring', duration: 3 }
     return (
         <div className='reasons' id='reasons'>
             <div className='left-r'>
@@ -20,26 +22,50 @@ const reasons = () => {
             </div>
             <div className='right-r'>
                 <span>some reasons</span>
-                <div>
-                    <span className='stroke-text'>why</span>
+                <motion.div
+                            initial={{ opacity: 0, x: -100 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: 100 }}
+                            transition={transition}
+                ><span className='stroke-text'>why</span>
                     <span> choose us?</span>
-                </div>
+                </motion.div>
                 <div className='details-r'>
                     <div>
                         <img src={tick} alt="tick" />
-                        <span>OVER 140+ EXPERT COACHS</span>
+                        <motion.span
+                            initial={{ opacity: 0, x: 40 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -100 }}
+                            transition={transition}
+                        >OVER 140+ EXPERT COACHS</motion.span>
                     </div>
                     <div>
                         <img src={tick} alt="tick" />
-                        <span>TRAIN SMARTER AND FASTER THAN BEFORE</span>
+                        <motion.span
+                            initial={{ opacity: 0, x: 60 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -100 }}
+                            transition={transition}
+                        >TRAIN SMARTER AND FASTER THAN BEFORE</motion.span>
                     </div>
                     <div>
                         <img src={tick} alt="tick" />
-                        <span> 1 FREE PROGRAM FOR NEW MEMBER</span>
+                        <motion.span
+                            initial={{ opacity: 0, x: 80 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -100 }}
+                            transition={transition}
+                        > 1 FREE PROGRAM FOR NEW MEMBER</motion.span>
                     </div>
                     <div>
                         <img src={tick} alt="tick" />
-                        <span>RELIABLE PARTNERS</span>
+                        <motion.span
+                            initial={{ opacity: 0, x: 100 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -100 }}
+                            transition={transition}
+                        >RELIABLE PARTNERS</motion.span>
                     </div>
                 </div>
                 <span
