@@ -6,7 +6,7 @@ import LinkedIn from '../../assets/linkedin.png';
 import Logo from '../../assets/logo.png';
 
 
-const footer = () => {
+const Footer = () => {
     return (
         <div className='footer-container'>
             <hr />
@@ -26,4 +26,4 @@ const footer = () => {
     )
 }
 
-export default footer
+export default Footer

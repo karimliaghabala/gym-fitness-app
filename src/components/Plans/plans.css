@@ -76,8 +76,11 @@
     color: orange;
 }
 @media screen and (max-width:768px){
-    .plan{
+    .plans{
         flex-direction: column;
+        display: block;
+        justify-content: center;
+        align-items: center;
     }
     .plans>:nth-child(2){
         transform: none;

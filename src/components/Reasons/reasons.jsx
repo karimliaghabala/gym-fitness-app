@@ -10,7 +10,7 @@ import nike from '../../assets/nike.png';
 import tick from '../../assets/tick.png';
 import { motion } from 'framer-motion';
 
-const reasons = () => {
+const Reasons = () => {
     const transition = { type: 'spring', duration: 3 }
     return (
         <div className='reasons' id='reasons'>
@@ -60,4 +60,4 @@ const reasons = () => {
     )
 }
 
-export default reasons
+export default Reasons

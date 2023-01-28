@@ -3,7 +3,7 @@ import '../Programs/programs.css'
 import {programsData} from '../../data/programsData'
 import RightArrow from '../../assets/rightArrow.png'
 
-const programs = () => {
+const Programs = () => {
   return (
     <div className='programs' id='programs'>
         {/* header */}
@@ -29,4 +29,4 @@ const programs = () => {
   )
 }
 
-export default programs
+export default Programs

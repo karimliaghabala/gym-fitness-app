@@ -30,8 +30,11 @@
     .header-menu{
         flex-direction: column;
         background-color: var(--appColor);
+        width: 15rem;
+        align-items: center;
         padding: 2rem;
         opacity: 0.8;
+        top: 0; 
     }
 }
 @media screen  and (max-width:375px ) {
@@ -43,7 +46,10 @@
     .header-menu{
         flex-direction: column;
         background-color: var(--appColor);
+        width: 15rem;
+        align-items: center;
         padding: 2rem;
         opacity: 0.8;
+        top: 0; 
     }
 }
